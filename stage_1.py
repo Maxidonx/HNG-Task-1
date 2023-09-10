@@ -28,10 +28,10 @@ def get_info():
     response_data = {
         "slack_name": slack_name,
         "current_day": current_day,
-        "current_utc_time": current_time.strftime("%Y-%m-%d %H:%M:%S %Z"),
+        "utc_time": current_time.strftime("%Y-%m-%d %H:%M:%S %Z"),
         "track": track,
-        "github_url_file": github_url_file,
-        "github_url_source": github_url_source,
+        "github_file_url": github_url_file,
+        "github_repo_url": github_url_source,
         "status_code": 200
     }
 
