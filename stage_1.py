@@ -37,13 +37,13 @@ def get_info():
     
     # Create the response JSON
     response_data = {
-        "slack_name": slack_name,
+        "slack_name": slack_name, #displays a set
         "current_day": current_day,
         "utc_time": current_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "track": track,
         "github_file_url": github_url_file,
         "github_repo_url": github_url_source,
-        "status_code": 200
+        "status_code": 200 #this shows the status of app
     }
 
     return jsonify(response_data)
